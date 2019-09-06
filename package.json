@@ -1,0 +1,26 @@
+{
+  "name": "solr-nested-highlighting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charbugs/solr-nested-highlighting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charbugs/solr-nested-highlighting/issues"
+  },
+  "homepage": "https://github.com/charbugs/solr-nested-highlighting#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0",
+    "query-string": "^6.8.3",
+    "write": "^2.0.0"
+  }
+}
