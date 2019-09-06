@@ -1,5 +1,5 @@
-const requestSolr = require('./request')
-const config = require('../config')
+import requestSolr from './request'
+import config from '../config.json'
 
 const response = requestSolr(config)
 

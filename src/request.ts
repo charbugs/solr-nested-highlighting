@@ -1,11 +1,11 @@
-const fetch = require('node-fetch')
-const queryString = require('query-string')
+import fetch from 'node-fetch'
+import queryString from 'query-string'
 
 
-function buildQueryString(config) {
+function buildQueryString(config: any) {
   const { queryFields, queryTerm, start, rows, parentHint } = config
 
-  const q = queryFields.map(field => {
+  const q = queryFields.map((field: any) => {
     return `({!parent which=${parentHint.field}:${parentHint.value}}${field}:${queryTerm} OR ${field}:${queryTerm})`
   }).join(' OR ')
 
@@ -22,15 +22,16 @@ function buildQueryString(config) {
   }
 }
 
-function createQueryUrl(endpoint, query) {
+function createQueryUrl(endpoint: any, query: any) {
   return `${endpoint}/?${queryString.stringify(query)}`
 }
 
-module.exports = function(config) {
+export default async function(config: any) {
   const query = buildQueryString(config)
   const url = createQueryUrl(config.endpoint, query)
   if (config.logQueryUrl) {
     console.log(url)
   }
-  return fetch(url).then(res => res.json())
+  const res = await fetch(url);
+  return await res.json();
 }
