@@ -23,7 +23,7 @@ function buildQueryString(config: any) {
 }
 
 function createQueryUrl(endpoint: any, query: any) {
-  return `${endpoint}/?${queryString.stringify(query)}`
+  return `${endpoint}?${queryString.stringify(query)}`
 }
 
 export default async function(config: any) {

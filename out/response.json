@@ -1,0 +1,118 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 2,
+    "params": {
+      "q": "({!parent which=type_s:user}name_t:conrad.com OR name_t:conrad.com) OR ({!parent which=type_s:user}username_t:conrad.com OR username_t:conrad.com) OR ({!parent which=type_s:user}email_t:conrad.com OR email_t:conrad.com) OR ({!parent which=type_s:user}street_t:conrad.com OR street_t:conrad.com) OR ({!parent which=type_s:user}suite_t:conrad.com OR suite_t:conrad.com) OR ({!parent which=type_s:user}city_t:conrad.com OR city_t:conrad.com) OR ({!parent which=type_s:user}zipcode_t:conrad.com OR zipcode_t:conrad.com) OR ({!parent which=type_s:user}lat_t:conrad.com OR lat_t:conrad.com) OR ({!parent which=type_s:user}lng_t:conrad.com OR lng_t:conrad.com) OR ({!parent which=type_s:user}phone_t:conrad.com OR phone_t:conrad.com) OR ({!parent which=type_s:user}website_t:conrad.com OR website_t:conrad.com) OR ({!parent which=type_s:user}catchPhrase_t:conrad.com OR catchPhrase_t:conrad.com) OR ({!parent which=type_s:user}bs_t:conrad.com OR bs_t:conrad.com)",
+      "hl": "on",
+      "fl": "*,[child]",
+      "group.limit": "1000",
+      "start": "0",
+      "hl.fl": "*",
+      "rows": "10",
+      "group.field": "_root_",
+      "group": "true"
+    }
+  },
+  "grouped": {
+    "_root_": {
+      "matches": 2,
+      "groups": [
+        {
+          "groupValue": "user-9",
+          "doclist": {
+            "numFound": 1,
+            "start": 0,
+            "docs": [
+              {
+                "id": "user-9",
+                "type_s": "user",
+                "name_t": "Glenna Reichert",
+                "username_t": "Delphine",
+                "email_t": "Chaim_McDermott@dana.io",
+                "phone_t": "(775)976-6794 x41206",
+                "website_t": "conrad.com",
+                "_version_": 1644127563500486700,
+                "address": {
+                  "id": "address-9",
+                  "type_s": "address",
+                  "street_t": "Dayna Park",
+                  "suite_t": "Suite 449",
+                  "city_t": "Bartholomebury",
+                  "zipcode_t": "76495-3109",
+                  "_version_": 1644127563500486700,
+                  "geo": {
+                    "id": "geo-9",
+                    "type_s": "geo",
+                    "lat_t": "24.6463",
+                    "lng_t": "-168.8889",
+                    "_version_": 1644127563500486700
+                  }
+                },
+                "company": {
+                  "id": "company-9",
+                  "type_s": "company",
+                  "name_t": "Yost and Sons",
+                  "catchPhrase_t": "Switchable contextually-based project",
+                  "bs_t": "aggregate real-time technologies",
+                  "_version_": 1644127563500486700
+                }
+              }
+            ]
+          }
+        },
+        {
+          "groupValue": "user-10",
+          "doclist": {
+            "numFound": 1,
+            "start": 0,
+            "docs": [
+              {
+                "id": "user-10",
+                "type_s": "user",
+                "name_t": "Clementina DuBuque",
+                "username_t": "Moriah.Stanton",
+                "email_t": "Rey.Padberg@karina.biz",
+                "phone_t": "024-648-3804",
+                "website_t": "ambrose.net",
+                "_version_": 1644127563501535200,
+                "address": {
+                  "id": "address-10",
+                  "type_s": "address",
+                  "street_t": "Kattie Turnpike",
+                  "suite_t": "Suite 198",
+                  "city_t": "Lebsackbury",
+                  "zipcode_t": "31428-2261",
+                  "_version_": 1644127563501535200,
+                  "geo": {
+                    "id": "geo-10",
+                    "type_s": "geo",
+                    "lat_t": "-38.2386",
+                    "lng_t": "57.2232",
+                    "_version_": 1644127563501535200
+                  }
+                },
+                "company": {
+                  "id": "company-10",
+                  "type_s": "company",
+                  "name_t": "Hoeger LLC",
+                  "catchPhrase_t": "Centralized empowering task-force",
+                  "bs_t": "target end-to-end models",
+                  "_version_": 1644127563501535200
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "highlighting": {
+    "user-9": {
+      "website_t": [
+        "<em>conrad.com</em>"
+      ]
+    },
+    "user-10": {}
+  }
+}

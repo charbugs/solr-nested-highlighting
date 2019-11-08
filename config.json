@@ -1,15 +1,30 @@
 {
-  "queryTerm": "Augustinus",
+  "endpoint": "http://localhost:8983/solr/users/select",
+  "queryTerm": "conrad.com",
   "start": 0,
   "rows": 10,
-  "endpoint": "http://b-dev1054.pk.de:8983/solr/hsp/select",
-  "out": "",
-  "logQueryUrl": true,
+  "outDir": "./out",
+  "logQueryUrl": false,
   "parentHint": {
-    "field": "contentTyp",
-    "value": "Kulturobjektdokument"
+    "field": "type_s",
+    "value": "user"
   },
   "queryFields": [
-    "titel"
-  ]
+    "name_t",
+    "username_t",
+    "email_t",
+    "street_t",
+    "suite_t",
+    "city_t",
+    "zipcode_t",
+    "lat_t",
+    "lng_t",
+    "phone_t",
+    "website_t",
+    "catchPhrase_t",
+    "bs_t"
+  ],
+  "testEndpoints": {
+    "users": "http://localhost:8983/solr/users/select"
+  }
 }
